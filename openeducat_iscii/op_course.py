@@ -25,7 +25,7 @@ from openerp import models, fields
 class OpCourse(models.Model):
 	_inherit = "op.course"
 
-	evaluation_id = fields.Many2one('op.course.evaluation', 'Evaluation Type')
+	evaluation_type = fields.Many2one('op.course.evaluation', 'Evaluation Type')
 
 class op_course_evaluation(models.Model):
 	_name = "op.course.evaluation"

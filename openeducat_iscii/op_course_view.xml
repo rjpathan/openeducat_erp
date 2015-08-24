@@ -7,7 +7,7 @@
 			<field name="inherit_id" ref="openeducat_erp.view_op_course_form"/>
 			<field name="arch" type="xml">
 				<field name="evaluation_type" position="replace">
-					<field name="evaluation_id" required="1"/>
+					<field name="evaluation_type" required="1"/>
 				</field>
 			</field>
 		</record>
@@ -18,7 +18,7 @@
 			<field name="inherit_id" ref="openeducat_erp.view_op_course_tree"/>
 			<field name="arch" type="xml">
 				<field name="evaluation_type" position="replace">
-					<field name="evaluation_id"/>
+					<field name="evaluation_type"/>
 				</field>
 			</field>
 		</record>
@@ -29,12 +29,12 @@
 			<field name="inherit_id" ref="openeducat_erp.view_op_course_search"/>
 			<field name="arch" type="xml">
 				<field name="evaluation_type" position="replace">
-					<field name="evaluation_id"/>
+					<field name="evaluation_type"/>
 				</field>
 
 				<filter string="Evaluation Type" position="replace">
 					<filter string="Evaluation Type" domain="[]"
-							context="{'group_by':'evaluation_id'}" />
+							context="{'group_by':'evaluation_type'}" />
 				</filter>
 			</field>
 		</record>
